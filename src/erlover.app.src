@@ -1,0 +1,14 @@
+{application, erlover,
+ [
+  {description, "An Erlang erlover library"},
+  {vsn, "1"},
+  {modules, [
+             erlover
+            ]},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {env, []}
+ ]}.
