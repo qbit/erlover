@@ -3,6 +3,7 @@
 -export([send/3, send/1]).
 
 send(M) ->
+    %% Thanks to @choptastic for the help with this bit!
     St = [K ++ "=" ++ V || {K, V} <- M],
     post(string:join(St, "&")).
 
