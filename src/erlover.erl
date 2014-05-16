@@ -30,4 +30,10 @@ send(Token, User, Parts) ->
 
 %% @TODO make multi users work.
 
-post(Body) -> httpc:request(post, {"https://api.pushover.net/1/messages.json", [], "application/x-www-form-urlencoded", Body}, [], []).
+post(Body) -> httpc:request(post, 
+    {
+        "https://api.pushover.net/1/messages.json",
+        [],
+        "application/x-www-form-urlencoded",
+        Body
+    }, [], []).
